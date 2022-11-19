@@ -1,0 +1,13 @@
+<script type="text/javascript">
+
+
+let nameUser=prompt("Please enter your name")
+let tableName=nameUser.split(" ")
+
+for(let i=0;i<tableName.length;i++){
+    tableName[i]=tableName[i][0].toUpperCase()+tableName[i].substring(1).toLowerCase();
+}
+ tableName=tableName.join(" ")
+console.log(tableName)
+
+</script>

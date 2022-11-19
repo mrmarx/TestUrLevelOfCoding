@@ -1,0 +1,37 @@
+<script type="text/javascript">
+
+let interval=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+let a=2 
+let b=3
+
+let count1=0
+let table1=[]
+let count2=0
+let table2=[]
+let count3=0
+let table3=[]
+let table4=[]
+let count4=0
+
+for(let i=0;i<interval.length;i++){
+    if(interval[i]%a==0 && interval[i]%b!=0){
+         table1.push(interval[i])
+         count1+=1
+    }else if(interval[i]%a!=0 && interval[i]%b==0){
+         table2.push(interval[i])
+         count2+=1
+    } else if(interval[i]%a==0 && interval[i]%b==0){         table3.push(interval[i])
+         count3+=1
+    } else{
+         table4.push(interval[i])
+         count4+=1
+    }
+}
+console.log("miltip",a,"ki pa miltip ",b,"yo se:-->"+table1 ,"kamtite an se",count1)
+console.log("miltip",b,"ki pa miltip ",a,"yo se:-->"+table2 ,"kamtite an se",count2)
+console.log("miltip",a,"ki se miltip ",b,"yo se:-->"+table3 ,"kamtite an se",count3)
+console.log("nomb ki pa ni miltip ",a,"ni ",b,"yo se:-->"+table4 ,"kamtite an se",count4)
+
+
+    
+</script>

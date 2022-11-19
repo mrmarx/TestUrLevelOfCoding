@@ -1,0 +1,26 @@
+<script type="text/javascript">
+let seq=[0,1,2,3,4]
+let newseq=[]
+let secondseq=[]
+let thirdseq=[]
+let lastseq=[]
+for(let i=1;i<=seq.length;i++){
+    newseq.push(seq[seq.length-i])
+}
+
+for(let i=2;i<=newseq.length;i++){
+    secondseq[4]=newseq[4]
+    secondseq.push(newseq[newseq.length-i])
+}
+for(let i=1;i<=secondseq.length;i++){
+    thirdseq.push(secondseq[secondseq.length-i])
+}
+for(let i=1;i<=thirdseq.length;i++){
+    lastseq.push(thirdseq[thirdseq.length-i])
+}
+
+
+console.log(newseq)
+
+
+</script>

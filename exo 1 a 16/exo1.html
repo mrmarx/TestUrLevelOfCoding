@@ -1,0 +1,16 @@
+<script type="text/javascript">
+let result=0
+    let result2;
+  let Ip=prompt("enter your Ip adress")
+  while(Ip.length>16){
+    Ip=prompt("enter your Ip adress")
+  }
+  let IpTable=Ip.split(".")
+
+let IpTable2=IpTable.join("")
+for(let i=0;i<IpTable2.length;i++){
+    result+=Number( IpTable2[i])
+}
+result2=result*IpTable2[0]
+  console.log(result2)
+</script>
