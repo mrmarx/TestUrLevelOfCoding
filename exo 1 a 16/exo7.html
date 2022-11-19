@@ -1,26 +1,18 @@
 <script type="text/javascript">
 
 let chain=" Marx Aristal adolph"
-chain=chain.split(" ")
-chain=chain.join("")
+chain=chain.split("")
 let newchain= ""
 console.log(chain)
 let voyelle="aeuoiyAEIOUY"
 for (let i=0;i<chain.length;i++){
-    let chain2=chain
-    for(let j=0;j<voyelle.length;j++){
-        if(chain2[i]==voyelle[j]){
-            chain2[i-1]="*"
-            break
-        }
-        console.log(chain2)
+    if(voyelle.includes(chain[i])){
+        chain[i-1]="*"
     }
-    
-    
+}
+chain=chain.join("")
 
-    }
-
-
+console.log(chain)
 
 
 </script>
